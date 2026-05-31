@@ -298,6 +298,8 @@ timeline-glow {
   animation: blob-move 8s ease-in-out infinite;
 }
 
+}
 
-
+.navbar {
+  font-family: Arial, sans-serif;
 }

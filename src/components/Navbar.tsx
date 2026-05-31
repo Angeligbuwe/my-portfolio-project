@@ -37,7 +37,7 @@ export const Navbar = () => {
            : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="navbar max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
        <div className="flex items-center gap-3">

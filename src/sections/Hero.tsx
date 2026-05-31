@@ -103,13 +103,13 @@ export const Hero = () => {
               rounded-full bg-white/20 text-pink-400 text-lg md:text-xl font-bold glow-text 
               delay-1 animate-fade-in">
               <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
-               Aspiring Software Developer
+               Frontend Developer & UX/UI Enthusiast
                </span>
               </div>
 
 
                 <p className="text-lg md:text-xl text-gray-300 max-w-xl animate-fade-in-up delay-3">
-                 Frontend Developer & UX/UI enthusiast passionate about building modern, user friendly web applications.
+                Passionate about building modern, user friendly web applications.
                 </p>
                 </div>
 
