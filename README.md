@@ -68,8 +68,8 @@ The following tools, tutorials, and resources helped me during the development o
 - Tailwind CSS Documentation — https://tailwindcss.com
 - Vite Documentation — https://vitejs.dev
 - TypeScript Documentation — https://www.typescriptlang.org
-- GitHub
-- Vercel
+- GitHub (Version Control & code)
+- Netlify (Website Deployment & Hosting)
 
 
 ### APIs & AI Inspiration
@@ -93,8 +93,6 @@ The following tools, tutorials, and resources helped me during the development o
 Special thanks to:
 - ReDI School of Digital Integration
 - My instructors and mentors
-- The open-source community
-- ChatGPT for coding support and UI/UX improvement guidance
 
 
 ## 🚀 Live Demo
