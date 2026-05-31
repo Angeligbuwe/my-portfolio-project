@@ -2,7 +2,7 @@ import contactImage from '../assets/Contact.img.png';
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-gray-950 text-white">
+    <section id="contact" className="py-16 bg-gray-950 text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-4">
           Contact <span className="text-pink-400">Me</span>
@@ -60,11 +60,6 @@ export const Contact = () => {
             <div className="absolute inset-0 bg-black/20" />
           </div>
         </div>
-
-        <footer className="text-center py-4 text-gray-400 border-t border-gray-800 mt-12">
-          <p>&copy; 2026 Angel Osayimwense Igbuwe. All rights reserved.</p>
-          <p className="text-sm">Built with React & Tailwind CSS</p>
-        </footer>
       </div>
     </section>
   );

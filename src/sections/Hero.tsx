@@ -5,55 +5,35 @@ import angelImg from "../assets/Ang1.png";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
-const skills =[
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
-   xl:grid-cols-7 gap-4 mt-8 px-4 mx-w-6xl mx-auto">
+const skills = [
+  { name: "HTML", Icon: FaHtml5, color: "text-orange-500" },
+  { name: "CSS", Icon: FaCss3Alt, color: "text-blue-500" },
+  { name: "JavaScript", Icon: FaJsSquare, color: "text-yellow-400" },
+  { name: "React", Icon: FaReact, color: "text-cyan-400" },
+  { name: "Tailwind CSS", Icon: SiTailwindcss, color: "text-sky-400" },
+  { name: "TypeScript", Icon: SiTypescript, color: "text-blue-500" },
+  { name: "Git", Icon: FaGitAlt, color: "text-orange-500" },
+  { name: "GitHub", Icon: FaGithub, color: "text-gray-800" },
+];
 
-  <div className="flex items-center justify-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <FaHtml5 className="text-orange-500 text-2xl" />
-    <span>HTML</span>
+<div className="mt-10 w-full px-4">
+  <p className="mb-6 text-center text-gray-300">Tools & Technologies</p>
+
+  <div className="mx-auto grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    {skills.map(({ name, Icon, color }) => (
+      <div
+        key={name}
+        className="flex items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-5 py-4 text-white shadow-[0_0_20px_rgba(59,130,246,0.15)] backdrop-blur-md transition duration-300 hover:scale-105 hover:border-pink-400/40"
+      >
+        <Icon className={`text-2xl ${color}`} />
+        <span className="font-semibold">{name}</span>
+      </div>
+    ))}
   </div>
-
-  <div className="flex items-center justify-center gap-2 glass px-3 py-2 rounded-xl
-   text-sm sm:text-base min-w-[150px]">
-    <FaCss3Alt className="text-blue-500 text-2xl" />
-    <span>CSS</span>
-  </div>
-
-  <div className="flex items-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <FaJsSquare className="text-yellow-400 text-2xl" />
-    <span>JavaScript</span>
-  </div>
-
-  <div className="flex items-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <FaReact className="text-cyan-400 text-2xl" />
-    <span>React</span>
-  </div>
-
-  <div className="flex items-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <SiTailwindcss className="text-blue-400 text-2xl" />
-    <span>Tailwind CSS</span>
-  </div>
-
-  <div className="flex items-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <SiTypescript className="text-blue-600 text-2xl" />
-    <span>TypeScript</span>
-  </div>
-
-  <div className="flex items-center gap-2 glass px-3 py-2 rounded-xl 
-  text-sm sm:text-base min-w-[150px]">
-    <FaGitAlt className="text-orange-500 text-2xl" />
-    <span>Git</span>
-    </div>
-
 </div>
-]
+
 
 export const Hero = () => {
     return (
@@ -193,26 +173,32 @@ export const Hero = () => {
   </div>
 
   {/* Skills section */}
-  <div className="mt-20 animate-fade-in animation-delay-600">
-    <p className="text-center text-sm text-muted-foreground mb-6">
-      Tools & Technologies
-    </p>
+  <div className="mt-10 w-full px-4">
+  <p className="mb-6 text-center text-gray-300">
+    Tools & Technologies
+  </p>
 
-      <div className="relative overflow-hidden">
-        <div className="flex animate-marquee">
-          {skills.map((skill, idx) => (
-          <div key={idx} className="flex-shrink-0 px-6 py-3">
-            <span className="text-xl font-semibold transition-colors
-            hover:text-muted-foreground text-muted-foreground/60">
-              {skill}
-            </span>
-          </div>
-        ))}
-        </div>
-        </div>
-        </div>
-        </div>
+  <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
+    
+  {skills.map(({ name, Icon, color }, index) => (
+  <div
+    key={name}
+    className="float flex items-center justify-center gap-3 
+    rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white backdrop-blur-md 
+    transition duration-300 hover:scale-105 hover:border-pink-400/40"
+    style={{
+      animationDelay: `${index * 0.4}s`,
+    }}
+  >
+        <Icon className={`text-2xl ${color}`} />
+        <span className="font-semibold">{name}</span>
+      </div>
+    ))}
+
+  </div>
+</div>
+</div>
      </section>
   );
 };
